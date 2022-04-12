@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Bootsrap Library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- JS Bootstrap Library-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster+Two&family=Merriweather&family=Redressed&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- Title & Icon-->
+    <link rel="icon" href="Images/Page_3/favicon.ico">
+    <title>Deep Space | Final Frontier</title>
+</head>
+<body>
+    <!-- Importing Cursor Style for the webpage-->
+    <link rel="stylesheet" href="CSS/space.css">
+
+    <!-- Importing Cursor Style for the webpage-->
+    <link rel="stylesheet" href="CSS/cursor.css">
+
+    <!-- Div class for cursor style-->
+    <div class="cursor"></div>
+
+    <!-- Building a script file for the double tap click-->
+     <script>
+
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+        document.addEventListener('click', () => {
+        cursor.classList.add("expand");
+
+        setTimeout(() => {
+        cursor.classList.remove("expand");
+        }, 500)
+        })
+
+    </script>
+
+<!-- Navbar Using Bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#072227;">
+    <a class="navbar-brand" href="#">Космос</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">About the Creator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="intro.html">Beginning of Everything</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+   <div id="center-container">
+      <h1> <center><span class="interstellar">Interstellar Space</span></center></h1>
+      <ul class="content-1">
+            <li><p>
+                Interstellar space is defined as the space beyond a magnetic region that extends about 122 AU from the Sun, 
+                <br>as detected by Voyager 1, and the equivalent region of influence surrounding other stars. Voyager 1 entered interstellar space in 2012.
+            </p></li>
+            <li><p>
+                Scientists define the beginning of interstellar space as the place where the Sun's constant flow 
+                <br>of material and magnetic field stop affecting its surroundings.
+            </p></li>
+            <li><p>
+                Called as Helipause. It marks the end of a region created by our Sun that is called the heliosphere.
+            </p></li>
+            <li><p>
+                The Sun creates this heliosphere by sending a constant flow of particles and a magnetic field 
+                <br>out into space at over 670,000 miles per hour. This stream is called the 'solar wind.'
+            </p></li>
+            <li><p>
+                Inside the heliosphere, the solar particles are hot but less concentrated. 
+                <br>Outside of the bubble, they are very much colder but more concentrated.
+            </p></li>
+        </ul>
+        <img class="interstellar-image" src="Images/Page_3/Interstellar.gif">
+   </div>
+
+   <div id="top-container">
+        <h1> <center><span class="black-hole">Black Hole</span></center></h1>
+        <ul class="content-2">
+            <li><p>
+                A black hole is a region of spacetime where gravity is so strong that nothing — 
+                <br>no particles or even electromagnetic radiation such as light — can escape from it.
+            </p></li>
+            <li><p>
+                The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.
+            </p></li>
+            <li><p>
+                The boundary of no escape is called the event horizon. Although it has an enormous effect on the fate and 
+                <br>circumstances of an object crossing it, it has no locally detectable features according to general relativity.
+            </p></li>
+            <li><p>
+                At the centre of a black hole, as described by general relativity, may lie a gravitational singularity,
+                <br> a region where the spacetime curvature becomes infinite.
+            </p></li>
+            <li><p>
+                For a non-rotating black hole, this region takes the shape of a single point; for a rotating black hole <br>
+                it is smeared out to form a ring singularity that lies in the plane of rotation.
+            </p></li>
+            <li><p>
+                In both cases, the singular region has zero volume. It can also be shown that the singular region contains all the mass of the black hole solution. 
+                <br>The singular region can thus be thought of as having infinite density.
+            </p></li>
+        </ul>
+        <img class="blackhole-image" src="Images/Page_3/Black Hole.gif">
+   </div>
+
+   <div class="last-container">
+    <h1> <center><span class="dark-matter">Dark Matter & Energy</span></center></h1>
+    <ul class="content-3">
+        <h2> What is Dark Energy?</h2>
+        <li><p>
+            More is unknown than is known. We know how much dark energy there is because we know how it affects the universe's expansion.
+        </p></li>
+        <li><p>
+            Other than that, it is a complete mystery. But it is an important mystery. It turns out that roughly 68% of the universe is dark energy.
+        </p></li>
+        <li><p>
+            Dark matter makes up about 27%. The rest - everything on Earth, everything ever observed with all of our instruments, 
+            <br>all normal matter - adds up to less than 5% of the universe. 
+        </p></li>
+        <li><p>
+            One explanation for dark energy is that it is a property of space. 
+            <br>Albert Einstein was the first person to realize that empty space is not nothing. 
+        </p></li>
+        <li><p>
+            Space has amazing properties, many of which are just beginning to be understood. 
+            <br>The first property that Einstein discovered is that it is possible for more space to come into existence. 
+        </p></li>
+        <li><p>
+            Then one version of Einstein's gravity theory, the version that contains a cosmological constant, 
+            <br> makes a second prediction: "empty space" can possess its own energy.
+        </p></li>
+        <li><p>
+            As a result, this form of energy would cause the universe to expand faster and faster. 
+            <br>Unfortunately, no one understands why the cosmological constant should even be there, much less why it would have 
+            <br>exactly the right value to cause the observed acceleration of the universe. 
+        </p></li>
+
+        <img class="image-darkenergy" src="Images/Page_3/Dark Energy.jpg">
+
+        <h2>What is Dark Matter?</h2>
+        <li><p>
+            By fitting a theoretical model of the composition of the universe to the combined set of cosmological observations, 
+            <br>scientists have come up with the composition that we described above, ~68% dark energy, ~27% dark matter, ~5% normal matter.
+        </p></li>
+        <li><p>
+            Observations show that there is far too little visible matter in the universe to make up the 27% required by the observations.
+        </p></li>
+        <li><p>
+            Second, it is not in the form of dark clouds of normal matter, matter made up of particles called baryons. We know this because 
+            <br>we would be able to detect baryonic clouds by their absorption of radiation passing through them.
+        </p></li>
+        <li><p>
+            Third, dark matter is not antimatter, because we do not see the unique gamma rays that are produced when antimatter annihilates with matter.
+        </p></li>
+        <li><p>
+            Finally, we can rule out large galaxy-sized black holes on the basis of how many gravitational lenses we see.
+            <br> High concentrations of matter bend light passing near them from objects further away, but we do not see enough 
+            <br>lensing events to suggest that such objects to make up the required 25% dark matter contribution.
+        </p></li>
+
+        <img class="image-darkmatter" src="Images/Page_3/Dark Matter.gif">
+        <img class="image-darkmatter2" src="Images/Page_3/Dark Matter.jpg">
+
+    </ul>
+   </div>
+  
+</body>
+</html>

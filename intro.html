@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beginning of Everything </title>
+    <link rel="icon" href="Images/Page_2/favicon.ico">
+
+    <!-- CSS Bootsrap Library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- JS Bootstrap Library-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Lobster&family=Tangerine:wght@700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Importing Cursor Style for the webpage-->
+    <link rel="stylesheet" href="CSS/cursor.css">
+
+    <!-- Div class for cursor style-->
+    <div class="cursor"></div>
+
+    <!-- Building a script file for the double tap click-->
+     <script>
+
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+        document.addEventListener('click', () => {
+        cursor.classList.add("expand");
+
+        setTimeout(() => {
+        cursor.classList.remove("expand");
+        }, 500)
+        })
+
+     </script>
+     
+     <!-- Main CSS File for styling of this page of the website-->
+     <link rel="stylesheet" href="CSS/intro.css">
+
+     <!-- Navgiation Bar using Bootstrap-->
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Космос</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">About the Creator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="space.html">Deep Space</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <div id="content-universe">
+        <h2 class="heading"> <center>Understanding the Universe</center></h2>
+        <!-- <img class="universe-gif"src="../Images/Page_2/Universe.gif"> -->
+        <ul class="info-1">
+
+            <li> <p> The Universe is all of space & time and their contents, including planets, stars, galaxies,
+                <br> and all of other forms of energy and matter.
+            </p></li>
+            <li> <p> The Big Bang theory is the prevailing cosmological description of the development of the universe.
+                <br> According to this theory, space and time emerged together 13 billion years ago,<br>
+                 and the universe has been expanding ever since. 
+            </p></li>
+            <li> <p> The earliest cosmological models of the universe were developed by ancient Greek and <br>Indian philosophers
+                 and were geocentric, placing Earth at the center. 
+            </p></li>
+            <li> <p> Over the centuries, more precise astronomical observations led Nicolaus Copernicus to develop<br> the heliocentric model with the Sun at the center of the Solar System.<br>
+                    In developing the law of universal gravitation, Isaac Newton built upon Copernicus's work as well <br>as Johannes Kepler's laws of planetary motion and observations by Tycho Brahe.
+            </p></li>
+            <li> <p>From studying the movement of galaxies, it has been discovered that the universe contains <br>much more matter than is accounted for by visible objects;<br> stars, galaxies, nebulas and interstellar gas. <br>
+                    This unseen matter is known as dark matter (dark means that there is a wide range of <br>strong indirect evidence that it exists, but we have not yet detected it directly).
+            </p> </li>
+            <li><p> The prevailing model for the evolution of the universe is the Big Bang theory.</p></li>
+            
+        </ul>
+    </div>
+
+    <div id="content-bbt">
+        <h2 class="heading-2"><center>The Big Bang Theory</center></h2>
+        <!-- <img class="image-bbt" src="../Images/Page_2/Big Bang Theory.jpg"> -->
+        <ul class="info-2">
+            <li><p>It states  that the earliest state of the universe was an extremely hot and dense one, and that the universe subsequently expanded and cooled.</p></li>
+            <li><p>The model is based on general relativity and on simplifying assumptions such as the homogeneity and isotropy of space.<br>
+                 A version of the model with a cosmological constant (Lambda) and cold dark matter, known as the Lambda-CDM model, is the simplest model. <br>
+                 It provides a reasonably good account of various observations about the universe
+            </p></li>
+            <li><p>The Big Bang model accounts for observations such as the correlation of distance and redshift of galaxies, <br>the ratio of the number of hydrogen to helium atoms, and the microwave radiation background.</p></li>
+            <li><p>After about 9.8 billion years, the universe had expanded sufficiently so that the density of matter was less than <br>the density of dark energy, marking the beginning of the present dark-energy-dominated era.<br>
+                   In this era, the expansion of the universe is accelerating due to dark energy.
+            </p></li>
+        </ul>
+    </div>
+
+    <div id="content-exp">
+        <h3 class="heading-3"><center> Constituent spatial scales of the observable universe</center> </h3>
+        <img class="observable" src="Images/Page_2/Observable universe.png"> <br>
+        <ul class="info-3">
+            <li><p>The expansion of the Universe was inferred from early twentieth-century astronomical observations and is an essential ingredient of the Big Bang theory. </p></li>
+            <li><p>The expansion of the universe is the increase in distance between any two given gravitationally unbound parts of the observable universe with time. </p></li>
+            <li><p>Cosmologists like Edwin Hubble in 1929, have derived the redshift in light emitted by far away nebulas i.e. galaxies. </p></li>
+        </ul>
+        <!-- <img src="../Images/Page_2/Expanding Universe.jpg"> -->
+    </div>
+
+    <div id="new-page">
+        <h2> <center><a class="click" href="space.html">Now, let us dive into the deep space</a></center> </h2>
+    </div>
+
+</body>
+</html>

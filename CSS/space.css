@@ -1,0 +1,112 @@
+.form-inline{
+    position:relative;
+    left:700px;
+}
+
+h1{
+    font-size: 70px;
+    margin-top:50px;
+    font-family: 'Sacramento',cursive;
+    color: #231E23;
+}
+
+h2{
+    font-size:35px;
+    line-height: 1;
+    font-family: 'Bebas Neue', cursive;
+    color:#194350;
+}
+
+p{
+    font-size: 19px;
+    color:#072227;
+    font-family: 'Lobster Two', cursive;
+    line-height: 2;
+}
+
+#center-container{
+    padding: 20px 10px 20px 10px;
+}
+
+.interstellar{
+    position: relative;
+    top:1px;
+    text-decoration: underline overline;
+    margin-bottom: 50px;
+}
+
+.interstellar:hover{
+    background-color: #65C18C;
+}
+
+.content-1{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.interstellar-image{
+    position: absolute;
+    left:870px;
+    bottom:200px;
+}
+
+#top-container{
+    padding: 20px 10px 20px 10px;
+}
+
+.content-2{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.black-hole{
+    position: relative;
+    top:1px;
+    text-decoration: underline overline;
+    margin-bottom: 50px;
+}
+
+.black-hole:hover{
+    background-color: #65C18C;
+}
+
+.blackhole-image{
+    max-width: 35%;
+    position: absolute;
+    left:950px;
+    top: 900px;
+}
+
+.dark-matter{
+    position: relative;
+    top:1px;
+    text-decoration: underline overline;
+    margin-bottom: 50px;
+}
+
+.dark-matter:hover{
+    background-color: #65C18C;
+}
+
+#last-container{
+    padding: 20px 10px 20px 10px;
+}
+
+.image-darkenergy{
+    max-width: 40%;
+    position: absolute;
+    left:900px;
+    top:1700px;
+}
+
+.image-darkmatter{
+    position: absolute;
+    left:950px;
+    top:2160px;
+}
+
+.image-darkmatter2{
+    position: absolute;
+    left:1000px;
+    top:2520px;
+}

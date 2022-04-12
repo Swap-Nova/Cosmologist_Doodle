@@ -1,0 +1,120 @@
+h1{
+    font-size: 70px;
+    margin-top:50px;
+    line-height: 2;
+    font-family: 'Sacramento',cursive;
+    color: #231E23;
+}
+h2{
+    font-size:35px;
+    line-height: 1;
+    font-family: 'Bebas Neue', cursive;
+    color:#194350;
+}
+h3{
+    font-size:30px;
+    font-family: 'Redressed', cursive;
+    color:#483434;
+} 
+h4{
+    font-family: 'Merriweather',serif;
+    color:#141E61;
+    font-size:20px;
+    line-height: 2;
+}
+
+.contact{
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Redressed', cursive;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.contact:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+hr{ 
+    border-style: none;
+    border-top-style: dotted;  
+    border-color: grey;
+    border-width: 10px;
+    width: 15%;
+} 
+
+#contact-container{
+    background-color: #b5e9c2;
+}
+
+.geek{
+    max-width: 10%;
+}
+
+.mailicon{
+    max-width: 5%;
+}
+
+.github{
+    color:#11999e;
+    font-family: 'Redressed', cursive;
+    max-width: 5%;
+    position: relative;
+    right: 150px;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.github:hover{
+    background-color: #EAF6F6;
+}
+.linkedin{
+    color:#11999e;
+    font-family: 'Redressed', cursive;
+    max-width: 5%;
+    position: relative;
+    left:140px; 
+    bottom:210px; 
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.linkedin:hover{
+    background-color: #EAF6F6;
+}
+.copyright{
+    position: relative;
+    bottom:150px;
+    padding:20px 0;
+    margin-bottom: 0px;
+    color:#11a3a8;
+    font-size: 1.65rem;
+}
+.about{
+    text-decoration: underline overline;   
+}
+.about:hover{
+    background-color: #41cc90;
+}
+
+body{
+    margin:0px;
+}
+
+#contact-container{
+    margin:0px;
+    padding-top: 50px;
+}
