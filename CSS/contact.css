@@ -118,3 +118,8 @@ body{
     margin:0px;
     padding-top: 50px;
 }
+
+.form-inline{
+    position:relative;
+    left:700px;
+}
